@@ -29,6 +29,6 @@ This web application simplifies your life by helping you manage your addresses a
 
 **Feedback:**
 
-We welcome your feedback and suggestions! Share your thoughts at [your preferred contact channel].
+We welcome your feedback and suggestions!
 
 **Let's simplify your address management and unlock the potential of location discovery!**
