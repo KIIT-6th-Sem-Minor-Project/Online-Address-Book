@@ -113,6 +113,7 @@ button {
   padding: 1.2rem 2.4rem 1rem 2.4rem;
   max-width: 580px;
   min-width: 500px;
+  color: var(--dark-blue); /* Update text color for consistency */
 }
 
 .modal-row {
@@ -188,6 +189,8 @@ button {
 
 /* address list */
 .addr-book {
+  background-color: #fff;
+  border-radius: 4px;
   padding: 1.4rem;
   margin: 0 auto;
   max-width: 1200px;
@@ -201,6 +204,7 @@ button {
 }
 
 .addr-book-head {
+  color: var(--dark-blue);
   padding-top: 1.5rem;
   margin-bottom: 2rem;
   display: -webkit-box;
@@ -304,6 +308,7 @@ button {
 
 .addr-table tbody tr:hover {
   background-color: var(--orange-color);
+  color: #fff;
   -webkit-transition: all 200ms ease;
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
@@ -369,6 +374,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #3b4465; 
 }
 
 .section-title {
@@ -420,7 +426,7 @@ body {
   font-family: inherit;
   font-size: 16px;
   letter-spacing: 0.5px;
-  color: #999;
+  color: #3b4465;
   background-color: transparent;
   border: none;
   outline: none;
@@ -456,7 +462,7 @@ body {
   display: block;
   width: inherit;
   height: inherit;
-  background-color: currentColor;
+  background-color: #3b4465;
   transition: transform 0.2s ease-out;
 }
 
@@ -479,6 +485,7 @@ body {
   padding: 30px 25px;
   border-radius: 5px;
   transform-origin: top;
+  background-color: #fff;
 }
 
 .form-login {
