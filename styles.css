@@ -326,6 +326,8 @@ button {
 }
 
 /* for error message */
+
+/*dummy commit */
 .errorMsg {
   border: 1px solid #d33c41 !important;
 }
@@ -358,6 +360,8 @@ button {
   background-color: #bd5305;
 }
 
+/* LOGIN AND SIGNUP PAGE */
+
 *,
 *::before,
 *::after {
@@ -375,7 +379,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #3b4465; 
+  color: #3b4465;
 }
 
 .section-title {
