@@ -9,14 +9,14 @@ const digitRegex = /^\d+$/;
 
 // -------------------------------------------------- //
 
-// const countryList = document.getElementById("country-list");
-// const fullscreenDiv = document.getElementById("fullscreen-div");
-// const modal = document.getElementById("modal");
-// const addBtn = document.getElementById("add-btn");
-// const closeBtn = document.getElementById("close-btn");
-// const modalBtns = document.getElementById("modal-btns");
-// const form = document.getElementById("modal");
-// const addrBookList = document.querySelector("#addr-book-list tbody");
+const countryList = document.getElementById("country-list");
+const fullscreenDiv = document.getElementById("fullscreen-div");
+const modal = document.getElementById("modal");
+const addBtn = document.getElementById("add-btn");
+const closeBtn = document.getElementById("close-btn");
+const modalBtns = document.getElementById("modal-btns");
+const form = document.getElementById("modal");
+const addrBookList = document.querySelector("#addr-book-list tbody");
 
 // document.getElementById('save-btn').addEventListener('click', (event) => {
 //   event.preventDefault(); // Prevent default form submission
