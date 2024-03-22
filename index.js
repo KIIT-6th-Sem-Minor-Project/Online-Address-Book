@@ -18,43 +18,7 @@ const modalBtns = document.getElementById("modal-btns");
 const form = document.getElementById("modal");
 const addrBookList = document.querySelector("#addr-book-list tbody");
 
-// document.getElementById('save-btn').addEventListener('click', (event) => {
-//   event.preventDefault(); // Prevent default form submission
 
-//   const form = document.getElementById('modal');
-//   if (form.checkValidity() === false) {
-//     // Display validation errors to the user
-//     event.stopPropagation();
-//     return;
-//   }
-
-//   const formData = new FormData(form);
-
-//   fetch('/addresses', {
-//     method: 'POST',
-//     body: formData
-//   })
-//     .then(response => {
-//       if (!response.ok) {
-//         throw new Error(`HTTP error! status: ${response.status}`);
-//       }
-//       return response.json();
-//     })
-//     .then(data => {
-//       // Handle successful response
-//       console.log("Address saved successfully:", data);
-//       alert("Address saved successfully!");
-//       document.getElementById('modal').reset();
-//       // Optionally, close the modal or redirect to another page
-//     })
-//     .catch(error => {
-//       console.error("Error saving address:", error);
-//       alert("Error saving address. Please try again.");
-//       // Optionally, display more specific error messages based on the error
-//     });
-// });
-
-// -------------------------------------------------- //
 let addrName =
   (firstName =
   lastName =
@@ -96,7 +60,7 @@ class Address {
   }
 
   static getAddresses() {
-    // from local storage
+    //from local storage
     let addresses;
     if (localStorage.getItem("addresses") == null) {
       addresses = [];
@@ -438,3 +402,5 @@ switchers.forEach((item) => {
     this.parentElement.classList.add("is-active");
   });
 });
+
+
