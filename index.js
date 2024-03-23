@@ -18,59 +18,6 @@ const modalBtns = document.getElementById("modal-btns");
 const form = document.getElementById("modal");
 const addrBookList = document.querySelector("#addr-book-list tbody");
 
-
-// -------------------------------------------------- //
-// let addrName =
-//   (firstName =
-//     lastName =
-//     email =
-//     phone =
-//     streetAddr =
-//     postCode =
-//     city =
-//     country =
-//     labels =
-//     "");
-
-// // Address class
-// class Address {
-//   constructor(
-//     id,
-//     addrName,
-//     firstName,
-//     lastName,
-//     email,
-//     phone,
-//     streetAddr,
-//     postCode,
-//     city,
-//     country,
-//     labels
-//   ) {
-//     this.id = id;
-//     this.addrName = addrName;
-//     this.firstName = firstName;
-//     this.lastName = lastName;
-//     this.email = email;
-//     this.phone = phone;
-//     this.streetAddr = streetAddr;
-//     this.postCode = postCode;
-//     this.city = city;
-//     this.country = country;
-//     this.labels = labels;
-//   }
-
-//   static getAddresses() {
-//     // from local storage
-//     let addresses;
-//     if (localStorage.getItem("addresses") == null) {
-//       addresses = [];
-//     } else {
-//       addresses = JSON.parse(localStorage.getItem("addresses"));
-//     }
-//     return addresses;
-//   }
-
 //   static addAddress(address) {
 //     const addresses = Address.getAddresses();
 //     addresses.push(address);
@@ -507,3 +454,5 @@ switchers.forEach((item) => {
     this.parentElement.classList.add("is-active");
   });
 });
+
+
