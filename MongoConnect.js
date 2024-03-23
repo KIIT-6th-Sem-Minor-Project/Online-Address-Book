@@ -10,8 +10,8 @@ if (!process.env.MONGODB_URI) {
 const connect = async () => {
 
     const con = await mongoose.connect(MONGO_URL, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
+        // useNewUrlParser: true,
+        // useUnifiedTopology: true,
         dbName: "Users"
     })
 }

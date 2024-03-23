@@ -84,6 +84,25 @@ app.get('/addresses', async (req, res) => {
     }
 });
 
+app.get('/addresses/:viewID', async (req, res) => {
+    try {
+        const { viewID } = req.params;
+
+        // Retrieve address data from your database or data source
+        const address = await Address.findById(viewID); // Replace with your data retrieval logic
+        // console.log(address)
+        if (!address) {
+            res.status(404).json({ message: 'Address not found' });
+            return;
+        }
+
+        res.json(address);
+    } catch (error) {
+        console.error('Error fetching address:', error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+});
+
 app.put('/addresses/:id', async (req, res) => {
     try {
         const { id } = req.params; // Extract address ID from request parameters
@@ -133,7 +152,7 @@ app.delete('/addresses/:id', async (req, res) => {
         }
 
         await Address.deleteOne({ _id: existingAddress._id });
- // Delete the address from the database
+        // Delete the address from the database
 
         console.log("Address deleted:", existingAddress);
         res.json({ message: "Address deleted successfully." });
