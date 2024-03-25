@@ -1,5 +1,9 @@
 const mongoose = require('mongoose');
 const addressSchema = new mongoose.Schema({
+    profilePic:
+    {
+        type: String,
+    },
     user: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User', // Assuming a "User" model exists

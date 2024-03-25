@@ -8,6 +8,8 @@ const Address = require('./Models/AddressModel')
 
 require('dotenv').config();
 
+const uploadProfilePic = require('../Online-Adress-Book/cloudinary')
+
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -46,10 +48,16 @@ app.post('/addresses', async (req, res) => {
             return res.status(400).json({ error: "Address already exists for this user." });
         }
 
+        var secureUrl = "";
+
+        if (req.body.profilePic) {
+            secureUrl = await uploadProfilePic(req.body.profilePic);
+        }
         // Optional: Handle profile picture upload (if applicable)
         // ...
 
         const newAddress = new Address({
+            profilePic: secureUrl,
             user,
             addrIngName,
             firstName,
